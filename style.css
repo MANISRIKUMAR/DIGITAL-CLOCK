@@ -1,0 +1,72 @@
+/* General styles for the body */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    background: url('mskin-logo.png') center/cover no-repeat, linear-gradient(to bottom, #4facfe, #00f2fe);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container for the clock */
+  #clock-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 350px;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+  }
+  
+  /* Styles for the clock (12-hour format) */
+  #clock {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Styles for the 24-hour format */
+  #time24 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #d1d5db;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add animation for smooth updates */
+  #clock,
+  #time24 {
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  #clock:hover,
+  #time24:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    color: #facc15; /* Golden yellow */
+  }
+  #speak-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #speak-button:hover {
+    background: #45a049;
+  }
+  
+  
+
+
